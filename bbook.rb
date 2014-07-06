@@ -43,7 +43,7 @@ no = 3
 	rescue Mechanize::ResponseCodeError
 		month = month.prev_month
 		count += 1
-		5 > count ? retry : break
+		3 > count ? retry : break
 	end
 	no -= 1
 end
